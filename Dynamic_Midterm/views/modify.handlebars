@@ -1,0 +1,18 @@
+
+
+<form action="/dashboard/{{username}}" method="post">
+
+  <div>
+    <input type="text" placeholder="Item name" name="name" value="{{{username}}.{{item}}}">
+  </div>
+
+  <div>
+    <input type="text" value="{{{username}}.{{price}}}" placeholder="price" name="price">
+  </div>
+  <div>
+    <input type="date" placeholder="date" value="{{{username}}.{{date}}}" name="date">
+  </div>
+  <div>
+    <input type="submit" value="Modify this item">
+  </div>
+</form>
